@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-//Demonstrate useState Hook for using state in functional component
 class ClassCounter extends Component {
     constructor(props) {
         super(props)
