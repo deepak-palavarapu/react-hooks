@@ -5,7 +5,9 @@ import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import DataFetching from './components/DataFetching';
+import UseContextHook from './components/UseContextHook';
 
+export const userContext = React.createContext()
 function App() {
   return (
     <div className="App">
@@ -13,8 +15,10 @@ function App() {
       <HookCounter></HookCounter> */}
       {/* <HookCounterTwo></HookCounterTwo> */}
       {/* <HookCounterThree></HookCounterThree> */}
-      <DataFetching></DataFetching>
-
+      {/* <DataFetching></DataFetching> */}
+      <userContext.Provider value={'Vishwas'}>
+        <UseContextHook></UseContextHook>
+      </userContext.Provider>
     </div>
   );
 }
