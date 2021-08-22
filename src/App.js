@@ -6,6 +6,7 @@ import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import DataFetching from './components/DataFetching';
 import UseContextHook from './components/UseContextHook';
+import FocusInput from './components/FocusInput';
 
 export const userContext = React.createContext()
 function App() {
@@ -16,9 +17,10 @@ function App() {
       {/* <HookCounterTwo></HookCounterTwo> */}
       {/* <HookCounterThree></HookCounterThree> */}
       {/* <DataFetching></DataFetching> */}
-      <userContext.Provider value={'Vishwas'}>
+      {/* <userContext.Provider value={'Vishwas'}>
         <UseContextHook></UseContextHook>
-      </userContext.Provider>
+      </userContext.Provider> */}
+      <FocusInput />
     </div>
   );
 }
